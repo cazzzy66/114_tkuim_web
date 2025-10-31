@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>會員註冊表單</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <main class="container">
+    <h1>會員註冊表單</h1>
+    <form id="signup-form" novalidate>
+      <!-- 姓名 -->
+      <label for="name">姓名：</label>
+      <input type="text" id="name" name="name" required aria-describedby="name-error">
+      <p id="name-error" class="error"></p>
+
+      <!-- Email -->
+      <label for="email">Email：</label>
+      <input type="email" id="email" name="email" required aria-describedby="email-error">
+      <p id="email-error" class="error"></p>
+
+      <!-- 手機 -->
+      <label for="phone">手機：</label>
+      <input type="tel" id="phone" name="phone" required pattern="09\d{8}" title="請輸入 09 開頭的 10 位手機號碼" aria-describedby="phone-error">
+      <p id="phone-error" class="error"></p>
+
+      <!-- 密碼 -->
+      <label for="password">密碼：</label>
+      <input type="password" id="password" name="password" required minlength="8" aria-describedby="password-error">
+      <p id="password-error" class="error"></p>
+
+      <!-- 確認密碼 -->
+      <label for="confirm">確認密碼：</label>
+      <input type="password" id="confirm" name="confirm" required aria-describedby="confirm-error">
+      <p id="confirm-error" class="error"></p>
+
+      <!-- 興趣標籤 -->
+      <fieldset id="interests">
+        <legend>興趣標籤（至少選 1 項）：</legend>
+        <label><input type="checkbox" name="interest" value="music"> 音樂</label>
+        <label><input type="checkbox" name="interest" value="sports"> 運動</label>
+        <label><input type="checkbox" name="interest" value="reading"> 閱讀</label>
+        <label><input type="checkbox" name="interest" value="travel"> 旅遊</label>
+        <p id="interest-error" class="error"></p>
+      </fieldset>
+
+      <!-- 服務條款 -->
+      <label class="terms">
+        <input type="checkbox" id="terms" required aria-describedby="terms-error">
+        我已閱讀並同意服務條款
+      </label>
+      <p id="terms-error" class="error"></p>
+
+      <button type="submit" id="submit-btn">送出</button>
+      <p id="form-success" class="success"></p>
+    </form>
+  </main>
+  <script src="signup_form.js"></script>
+</body>
+</html>
