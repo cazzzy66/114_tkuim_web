@@ -1,0 +1,19 @@
+.exist
+cd Week11/server
+db.participants.find().pretty()
+use week11
+docker exec -it week11-mongo mongosh -u week11-root -p week11-password123 --authenticationDatabase week11 
+docker exec -it week11-mongo mongosh -u week11-user -p week11-pass --authenticationDatabase week11
+week11> db.participants.find().pretty()
+switched to db week11
+test> use week11
+For mongosh info see: https://www.mongodb.com/docs/mongodb-shell/
+Using Mongosh:          2.5.9
+Using MongoDB:          7.0.26
+Connecting to:          mongodb://127.0.0.1:27017/?directConnection=true&serverSelectionTimeoutMS=2000&appName=mongosh+2.5.9
+Current Mongosh Log ID: 693269d233b920c4189dc29c
+PS C:\Users\USER\projects\114_tkuim_web\Week11\docker> docker exec -it week11-mongo mongosh    
+db.participants.find().pretty()
+use week11
+docker exec -it week11-mongo mongosh
+.participants.find()
