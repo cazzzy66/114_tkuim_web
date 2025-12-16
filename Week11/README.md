@@ -21,4 +21,5 @@ npm install
 cp .env.example .env 
 npm run dev
 
-## 3.
+## 3.MongoDB Compass
+![alt text](image.png)

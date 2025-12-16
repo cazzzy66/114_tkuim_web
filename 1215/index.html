@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Antigravity • Portal</title>
+  <link rel="stylesheet" href="./style.css" />
+</head>
+<body>
+  <div class="bg">
+    <div class="orb o1"></div>
+    <div class="orb o2"></div>
+    <div class="orb o3"></div>
+    <div class="grid"></div>
+  </div>
+
+  <header class="topbar">
+    <div class="brand">
+      <span class="brand__dot"></span>
+      <span class="brand__name">Antigravity</span>
+      <span class="brand__sub">Vibe</span>
+    </div>
+    <nav class="nav">
+      <a class="nav__link" href="./index.html" aria-current="page">Portal</a>
+      <a class="nav__link" href="./about.html">Control</a>
+    </nav>
+  </header>
+
+  <main class="container">
+    <section class="card lift">
+      <div class="card__header">
+        <h1 class="title">反重力系統入口</h1>
+        <p class="muted">
+          這是一個以 antigravity vibe 為主題的前端介面示範。
+          進入後可查看控制中心畫面與資料展示。
+        </p>
+      </div>
+
+      <form id="loginForm" class="form">
+        <label class="field">
+          <span class="field__label">操作者代號</span>
+          <input class="input" type="text" name="email" placeholder="operator@antigravity.lab" required />
+        </label>
+
+        <label class="field">
+          <span class="field__label">存取碼</span>
+          <input class="input" type="password" name="password" placeholder="輸入存取碼" required />
+        </label>
+
+        <div class="actions">
+          <button class="btn primary" type="submit">進入系統</button>
+          <button class="btn ghost" id="fillDemo" type="button">快速示範</button>
+        </div>
+
+        <div id="msg" class="msg"></div>
+      </form>
+    </section>
+
+    <section class="card lift side">
+      <h2 class="subtitle">設計概念</h2>
+      <p class="muted">
+        本頁面運用深色玻璃霧面、漂浮光球與低重力動畫，
+        模擬「反重力實驗室控制介面」的視覺風格。
+      </p>
+
+      <div class="hint">
+        <div class="pill">Antigravity Vibe</div>
+        <p class="muted">
+          重點在於視覺氛圍、卡片漂浮感與未來科技感，
+          非後端驗證，純前端展示。
+        </p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <span class="muted">Antigravity Vibe • Front-end Showcase</span>
+  </footer>
+
+  <script src="./main.js"></script>
+</body>
+</html>

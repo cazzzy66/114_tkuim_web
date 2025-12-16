@@ -5,8 +5,9 @@
 
 #  如何啟動前端（Live Server / Vite）。
 - 開啟 client/signup_form.html
-- 點選右鍵按下Open with Live Server
+- 全選點選右鍵按下Open with Live Server
 
 #  API 端點文件與測試方式。
 - 開啟 tests/api.http
-- 全選直接按 Send Request
+- 直接按 Send Request
+- 
